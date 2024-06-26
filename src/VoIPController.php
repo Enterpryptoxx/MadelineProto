@@ -310,7 +310,7 @@ final class VoIPController
                 return $this;
             } catch (CallAlreadyDeclinedError) {
                 $this->log(Lang::$current_lang['call_already_declined']);
-                $this->discard(DiscardReason::HANGUP);
+                $this->discard(DiscardReason::HANGUP, cancellation: $cancellation);
                 return $this;
             }
             $this->call['b'] = $b;
