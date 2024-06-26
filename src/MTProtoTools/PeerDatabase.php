@@ -35,6 +35,8 @@ use danog\MadelineProto\Logger;
 use danog\MadelineProto\MTProto;
 use danog\MadelineProto\PeerNotInDbException;
 use danog\MadelineProto\RPCError\UsernameNotOccupiedError;
+use danog\MadelineProto\RPCError\UsernameInvalidError;
+use danog\MadelineProto\RPCError\UsernameNotOccupiedError;
 use danog\MadelineProto\RPCErrorException;
 use danog\MadelineProto\TL\TLCallback;
 use danog\MadelineProto\Tools;
